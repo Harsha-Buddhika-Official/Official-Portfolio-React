@@ -6,7 +6,7 @@ function NavigationBar(){
             <h1>Harsha Buddhika</h1>
             <nav className="flex gap-4 ">
                 <button className="navi">Home</button>
-                <button className="navi">about</button>
+                <button className="navi">About</button>
                 <button className="navi">Project</button>
                 <button className="navi">Skills</button>
                 <button className="navi">Education</button>
