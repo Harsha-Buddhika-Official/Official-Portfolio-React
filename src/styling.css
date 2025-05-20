@@ -1,28 +1,28 @@
-.navi{
-    cursor: pointer;
-    color: #BEBFC5;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: medium;
-    text-transform: capitalize;
-    position: relative;
+.navi {
+  cursor: pointer;
+  color: #bebfc5;
+  font-family: "Fira Code", monospace;
+  font-weight: medium;
+  font-size: medium;
+  text-transform: capitalize;
+  position: relative;
 }
 
-.navi:hover{
-    color: white;
+.navi:hover {
+  color: white;
 }
 
-.navi::before{
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background-color: #63b3ed;
-    transition: width 0.3s ease;
+.navi::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ff4c60;
+  transition: width 0.3s ease;
 }
 
-.navi:hover::before{
-    width: 100%;
+.navi:hover::before {
+  width: 100%;
 }
