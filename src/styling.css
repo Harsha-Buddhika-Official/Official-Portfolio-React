@@ -26,3 +26,9 @@
 .navi:hover::before {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .navi {
+    display: inline-block;
+  }
+}

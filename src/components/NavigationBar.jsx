@@ -24,7 +24,7 @@ function NavigationBar() {
                 
             </button>
             
-            <nav className={`flex-col md:flex-row md:flex gap-8 absolute md:static top-16 left-0 w-full md:w-auto bg-[#1a1a1a] md:bg-transparent z-10 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} md:gap-8`}>
+            <nav className={`flex-col md:flex-row md:flex gap-8 absolute md:static top-16 left-0 w-full md:w-auto bg-[#1a1a1a] md:bg-transparent z-10 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} md:gap-8 py-4`}>
                 <button className="navi">Home</button>
                 <button className="navi">About</button>
                 <button className="navi">Project</button>
