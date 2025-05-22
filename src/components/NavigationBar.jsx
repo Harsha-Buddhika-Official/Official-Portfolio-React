@@ -5,7 +5,7 @@ function NavigationBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="flex justify-between items-center bg-[#1a1a1a88] text-white p-4 my-1 w-full text-center">
+        <div className="flex justify-between items-center bg-[#1a1a1a88] text-white p-4 my-1 w-full text-center sticky">
             <h1 className="text-[20px] font-bold" style={{ fontFamily: "'Fira Code', monospace" }}>Harsha Buddhika</h1>
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
@@ -24,13 +24,13 @@ function NavigationBar() {
                 
             </button>
             
-            <nav className={`flex-col md:flex-row md:flex gap-8 absolute md:static top-16 left-0 w-full md:w-auto bg-[#1a1a1a] md:bg-transparent z-10 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} md:gap-8 py-4`}>
-                <button className="navi"><span className="navi-text">Home</span></button>
-                <button className="navi"><span className="navi-text">About</span></button>
-                <button className="navi"><span className="navi-text">Project</span></button>
-                <button className="navi"><span className="navi-text">Skills</span></button>
-                <button className="navi"><span className="navi-text">Education</span></button>
-                <button className="navi"><span className="navi-text">Contacts</span></button>
+            <nav className={`flex-col md:flex-row md:flex gap-5 absolute md:static top-16 left-0 w-full md:w-auto bg-[#1a1a1a] md:bg-transparent z-10 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} md:gap-8 py-4`}>
+                <button ><span className=" navi">Home</span></button>
+                <button ><span className=" navi">About</span></button>
+                <button ><span className="navi">Project</span></button>
+                <button ><span className="navi">Skills</span></button>
+                <button ><span className="navi">Education</span></button>
+                <button ><span className="navi mb-1">Contacts</span></button>
             </nav>
         </div>
     );

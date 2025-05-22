@@ -9,18 +9,15 @@
   background: none;
   border: none;
   padding: 0;
+  position: relative;
+  display: inline-block;
 }
 
 .navi:hover {
   color: white;
 }
 
-.navi-text {
-  position: relative;
-  display: inline-block;
-}
-
-.navi-text::before {
+.navi::before {
   content: "";
   position: absolute;
   width: 0%;
@@ -31,7 +28,7 @@
   transition: width 0.3s ease;
 }
 
-.navi:hover .navi-text::before {
+.navi:hover .navi::before {
   width: 100%;
 }
 
