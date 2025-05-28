@@ -6,7 +6,9 @@ function App() {
 
   return (
     <>
-      <NavigationBar className="sticky"/>
+      <div className="fixed top-0 left-0 w-full z-50">
+        <NavigationBar/>
+      </div>
       <HomePage/>
     </>
   )

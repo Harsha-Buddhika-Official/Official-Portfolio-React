@@ -22,13 +22,13 @@ function TypingAni() {
       if (displayText.length < currentPhrase.length) {
         const timer = setTimeout(() => {
           setDisplayText(currentPhrase.substring(0, displayText.length + 1));
-        }, 100);
+        }, 200);
         return () => clearTimeout(timer);
       } else {
         // Pause before erasing
         const timer = setTimeout(() => {
           setIsTyping(false);
-        }, 1500);
+        }, 4000);
         return () => clearTimeout(timer);
       }
     } else {
@@ -48,20 +48,15 @@ function TypingAni() {
   }, [displayText, phraseIndex, isTyping, phrases]);
 
   return (
-    <div
-      className="h-auto max-w-full whitespace-normal break-words overflow-wrap text-center px-4"
-    >
-      <span className="text-5xl font-semibold text-white inline-block">
+    <div className="h-auto max-w-full whitespace-normal break-words overflow-wrap text-center px-4">
+      <span className="md:text-[30px] text-[20px] font-semibold text-white inline-block">
         {displayText}
-        <span
-          className="inline-block w-2 h-9 bg-white ml-1 animate-blink"
+        <span className="inline-block w-1 md:h-7 h-5 bg-white ml-1 animate-blink"
           style={{
-            // Tailwind doesn't have a built-in blink, so add custom animation:
             animation: "blink 1s infinite",
           }}
         ></span>
       </span>
-      {/* Custom blink keyframes for Tailwind */}
       <style>
         {`
           @keyframes blink {

@@ -5,7 +5,7 @@ function NavigationBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="flex justify-between items-center bg-[#1a1a1a88] text-white p-4 my-1 w-full text-center sticky">
+        <div className="flex justify-between items-center bg-[#1a1a1a88] text-white p-3 my-1 w-full text-center">
             <h1 className="text-[20px] font-bold" style={{ fontFamily: "'Fira Code', monospace" }}>Harsha Buddhika</h1>
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
