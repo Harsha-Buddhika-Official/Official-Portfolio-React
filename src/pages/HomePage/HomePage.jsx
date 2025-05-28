@@ -11,7 +11,7 @@ function HomePage(){
                 <div className='p-4 m-5 text-center'>
                     <Typing/>
                 </div>
-                <div className="mt-5 flex flex-col sm:flex-row items-center justify-center gap-6">
+                <div className="mt-5 flex sm:flex-row flex-col items-center justify-center gap-6">
                     <a href="https://storage.rxresu.me/cm7msdjjb3at21492ka4bii2s/resumes/intern-software-engineer.pdf" 
                     className="group px-8 py-4 bg-accent-600 text-white font-medium rounded-lg relative overflow-hidden shadow-lg shadow-accent-900/20">
                     <span className="relative z-10 flex items-center justify-center">

@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 body {
-  /* Dotted background pattern */
   background-color: #141414; /* or your preferred dark color */
-  background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(255,255,255,0.09) 1px, transparent 1px);
   background-size: 30px 30px; /* adjust for dot spacing */
   color: white;
 }
