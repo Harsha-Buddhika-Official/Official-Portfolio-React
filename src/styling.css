@@ -36,15 +36,11 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .navi {
     width: auto;
     display: inline-block;
     text-align: center;
-    padding: 8px 16px;
-  }
-  
-  nav {
-    padding: 8px 0;
+    padding: 7px 0px;
   }
 }
