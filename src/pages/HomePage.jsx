@@ -1,4 +1,4 @@
-import Typing from '../../components/TypingAni.jsx'
+import Typing from '../components/TypingAni.jsx'
 
 function HomePage(){
     return(

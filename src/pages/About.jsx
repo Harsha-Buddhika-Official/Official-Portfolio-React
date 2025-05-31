@@ -1,8 +1,8 @@
-import pic from '../../components/proPic.jpg'
+import pic from '../components/images/proPic.jpg'
 
 function About() {
     return (
-        <div className="flex md:flex-row flex-col justify-center items-center min-h-[300px] gap-5 mx-8">
+        <div className="flex md:flex-row flex-col justify-center items-center min-h-[300px] gap-5 mx-7">
             <div className="relative flex-shrink-0" style={{ width: 220, height: 220 }}>
                 {/* Spinning border */}
                 <div
