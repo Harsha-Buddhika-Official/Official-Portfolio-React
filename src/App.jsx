@@ -1,5 +1,6 @@
 import './App.css'
 import NavigationBar from './components/NavigationBar.jsx'
+import About from './pages/HomePage/About.jsx'
 import HomePage from './pages/HomePage/HomePage.jsx'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <NavigationBar/>
       </div>
       <HomePage/>
+      <About/>
     </>
   )
 }

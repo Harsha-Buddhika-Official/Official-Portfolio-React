@@ -3,7 +3,7 @@ import Typing from '../../components/TypingAni.jsx'
 function HomePage(){
     return(
         <>
-            <div className="flex flex-col items-center justify-center h-screen text-center" style={{fontFamily: "'Fira Code', monospace"}}>
+            <div className="flex flex-col items-center justify-center h-screen text-center" >
                 <div >
                     <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-white mb-2 drop-shadow-lg" style={{fontFamily: "arial"}}>Hi there...!</h1>
                     <p className="text-5xl md:text-6xl lg:text-7xl font-bold mt-4 mb-1 text-accent-400">I'm Harsha Buddhika</p>
@@ -12,7 +12,8 @@ function HomePage(){
                     <Typing/>
                 </div>
                 <div className="mt-5 flex sm:flex-row flex-col items-center justify-center gap-6">
-                    <a href="https://storage.rxresu.me/cm7msdjjb3at21492ka4bii2s/resumes/intern-software-engineer.pdf" 
+                    {/* cv link here */}
+                    <a href="" 
                     className="group px-8 py-4 bg-accent-600 text-white font-medium rounded-lg relative overflow-hidden shadow-lg shadow-accent-900/20">
                     <span className="relative z-10 flex items-center justify-center">
                         Download CV
