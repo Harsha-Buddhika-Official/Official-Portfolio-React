@@ -6,11 +6,11 @@ function NavigationBar() {
 
     return (
         <div className=" bg-[#1a1a1a88] text-white px-3 py-6 md:py-1 my-0 w-full">
-            <div className='flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-2 lg:px-8'>
+            <div className='flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-2 lg:px-8'>
                 <h1 className="text-[20px] font-bold" style={{ fontFamily: "'Fira Code', monospace" }}>Harsha Buddhika</h1>
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
-                    className="cursor-pointer md:hidden flex flex-col gap-1 focus:outline-none"
+                    className="flex flex-col gap-1 cursor-pointer md:hidden focus:outline-none"
                     aria-label="Toggle menu"
                 >
                     {menuOpen ? (
@@ -31,7 +31,7 @@ function NavigationBar() {
                     <button ><span className="navi">Project</span></button>
                     <button ><span className="navi">Skills</span></button>
                     <button ><span className="navi">Education</span></button>
-                    <button ><span className="navi mb-1 md:mb-0">Contacts</span></button>
+                    <button ><span className="mb-1 navi md:mb-0">Contacts</span></button>
                 </nav>
             </div>
         </div>

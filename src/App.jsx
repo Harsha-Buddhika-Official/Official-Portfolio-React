@@ -7,14 +7,15 @@ import HomePage from './pages/HomePage.jsx'
 function App() {
 
   return (
-    <>
-      <div className="fixed top-0 left-0 w-full z-50">
+    <div className='md:mx-[300px]  '>
+      <div className="fixed top-0 left-0 z-50 w-full">
         <NavigationBar/>
       </div>
       <HomePage/>
       <About/>
       <Education/>
-    </>
+      
+    </div>
   )
 }
 
