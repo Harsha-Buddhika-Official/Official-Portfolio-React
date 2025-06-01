@@ -4,8 +4,8 @@ function HomePage(){
     return(
         <>
             <div className="flex flex-col items-center justify-center h-screen text-center" >
-                <div >
-                    <h1 className="mb-2 text-6xl font-extrabold text-white md:text-7xl lg:text-8xl drop-shadow-lg" style={{fontFamily: "arial"}}>Hi there...!</h1>
+                <div>
+                    <h1 className="mb-2 text-6xl font-extrabold text-white md:text-7xl lg:text-8xl" style={{fontFamily: "arial"}}>Hi there...!</h1>
                     <p className="mt-4 mb-1 text-5xl font-bold md:text-6xl lg:text-7xl text-accent-400">I'm Harsha Buddhika</p>
                 </div>
                 <div className='p-4 my-5 text-center'>
