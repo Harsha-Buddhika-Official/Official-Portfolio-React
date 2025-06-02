@@ -54,7 +54,6 @@ function Footer() {
       behavior: "smooth",
     });
   };
-
   return (
     <footer className="bg-dark-900 pt-12 mt-16 relative pb-5">
       {/* Modern gradient divider replacing the border-t */}

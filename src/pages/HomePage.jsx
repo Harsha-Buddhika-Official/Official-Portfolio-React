@@ -22,10 +22,18 @@ function HomePage(){
                         </svg>
                     </span>
                     </a>
-                    <button className="relative px-8 py-4 overflow-hidden font-medium transition-colors duration-300 bg-transparent border-2 rounded-lg shadow-lg cursor-pointer group border-accent-500 text-accent-400 hover:text-white shadow-accent-900/10">
-                        <span className="relative z-10 flex items-center justify-center">
-                            Contact Me
-                        </span>
+                    <button 
+                    onClick={() => {
+                        const contactSection = document.getElementById('contact-section');
+                        if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }}
+                    className="relative px-8 py-4 overflow-hidden font-medium transition-colors duration-300 bg-transparent border-2 rounded-lg shadow-lg cursor-pointer group border-accent-500 text-accent-400 hover:text-white shadow-accent-900/10"
+                    >
+                    <span className="relative z-10 flex items-center justify-center">
+                        Contact Me
+                    </span>
                     </button>
                 </div>
             </div>
