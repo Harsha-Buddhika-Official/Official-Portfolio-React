@@ -5,6 +5,7 @@ import Contact from './pages/Contact.jsx'
 import Education from './pages/Education.jsx'
 import Footer from './pages/Footer.jsx'
 import HomePage from './pages/HomePage.jsx'
+import Project from './pages/Project.jsx'
 import Skills from './pages/Skills.jsx'
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
       <div className='md:m-[100px]'>
         <div id="About">
           <About />
+        </div>
+        <div id="Project">
+          <Project />
         </div>
         <div id="Skills">
           <Skills />

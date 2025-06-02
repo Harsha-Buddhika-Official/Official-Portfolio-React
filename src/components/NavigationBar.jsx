@@ -15,23 +15,25 @@ function NavigationBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['Home', 'About', 'Skills', 'Education', 'Contacts']; // Removed 'Project'
+            const sections = ['Home', 'About', 'Project', 'Skills', 'Education', 'Contacts'];
             const scrollPosition = window.scrollY;
-    
+
             sections.forEach((sectionId) => {
                 const section = document.getElementById(sectionId);
                 if (section) {
                     const offsetTop = section.offsetTop;
                     const offsetHeight = section.offsetHeight;
-    
-                    // Adjust the threshold for detecting the active section
+
+                    console.log(`Checking section: ${sectionId}, scrollPosition: ${scrollPosition}, offsetTop: ${offsetTop}, offsetHeight: ${offsetHeight}`); // Debugging log
+
                     if (scrollPosition >= offsetTop - 50 && scrollPosition < offsetTop + offsetHeight - 50) {
+                        console.log(`Active section detected: ${sectionId}`); // Debugging log
                         setActiveSection(sectionId);
                     }
                 }
             });
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -57,7 +59,7 @@ function NavigationBar() {
                 </button>
 
                 <nav className={`flex-col md:flex-row md:flex gap-3 absolute md:static top-16 left-0 w-full md:w-auto bg-[#1a1a1a] md:bg-transparent z-10 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} py-4 md:gap-5`}>
-                    {['Home', 'About', 'Skills', 'Education', 'Contacts'].map((section) => (
+                    {['Home', 'About', 'Project', 'Skills', 'Education', 'Contacts'].map((section) => (
                         <button key={section} onClick={() => handleScrollToSection(section)}>
                             <span className={`navi ${activeSection === section ? 'navi-active' : ''}`}>
                                 {section}
