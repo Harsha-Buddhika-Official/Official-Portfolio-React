@@ -47,25 +47,6 @@ function Footer() {
     },
   ];
 
-  // Function to scroll to a section
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      // Calculate position with offset for header
-      const headerOffset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
-      // Scroll to position
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    } else {
-      console.error(`Cannot scroll to section "${sectionId}" - element not found`);
-    }
-  };
-
   return (
     <footer className="bg-dark-900 pt-12 mt-16 relative pb-5">
       {/* Modern gradient divider replacing the border-t */}
@@ -116,7 +97,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col space-y-6">
+          {/* <div className="flex flex-col space-y-6">
             <h3 className="text-lg font-semibold text-gray-200">Quick Links</h3>
             <div className="flex flex-col space-y-3">
               <button 
@@ -156,7 +137,7 @@ function Footer() {
                 Contact
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
         
         <div className="mt-10 pt-8 flex flex-col md:flex-row md:justify-between md:items-center relative">
