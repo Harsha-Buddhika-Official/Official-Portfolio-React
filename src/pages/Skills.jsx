@@ -145,11 +145,11 @@ const Design = [
   return (
     <div id="skills" className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 overflow-hidden" ref={skillsRef}>
       {/* Decorative elements */}
-      <div className="absolute top-0 right-1/4 -mt-10 w-72 h-72 rounded-full bg-primary-100 dark:bg-primary-900/20 opacity-30 blur-3xl"></div>
+      {/* <div className="absolute top-0 right-1/4 -mt-10 w-72 h-72 rounded-full bg-primary-100 dark:bg-primary-900/20 opacity-30 blur-3xl"></div>
       <div className="absolute bottom-0 left-1/4 -mb-10 w-80 h-80 rounded-full bg-purple-100 dark:bg-purple-900/20 opacity-30 blur-3xl"></div>
-      
+       */}
       {/* Animated dot patterns */}
-      <div className="absolute right-10 top-1/4 opacity-20 dark:opacity-10">
+      {/* <div className="absolute right-10 top-1/4 opacity-20 dark:opacity-10">
         <div className="grid grid-cols-4 gap-2">
           {[...Array(16)].map((_, i) => (
             <div 
@@ -165,7 +165,7 @@ const Design = [
             ></div>
           ))}
         </div>
-      </div>
+      </div> */}
       
       <div className="relative z-10">
         <div className="text-center mb-12">
@@ -177,7 +177,7 @@ const Design = [
         
         <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 md:p-10 relative">
           {/* Connect dots pattern */}
-          <div className="absolute inset-0 overflow-hidden opacity-5 dark:opacity-10 pointer-events-none">
+          {/* <div className="absolute inset-0 overflow-hidden opacity-5 dark:opacity-10 pointer-events-none">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -186,7 +186,7 @@ const Design = [
               </defs>
               <rect width="100%" height="100%" fill="url(#dotGrid)" />
             </svg>
-          </div>
+          </div> */}
           
           <SkillSection title="Programming Languages" skills={programmingLanguages} />
           <SkillSection title="Web & App Technologies" skills={webTechnologies} />

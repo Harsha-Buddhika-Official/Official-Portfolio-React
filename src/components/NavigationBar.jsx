@@ -1,8 +1,40 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styling.css';
 
 function NavigationBar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('Home');
+
+    const handleScrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setActiveSection(sectionId);
+        }
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['Home', 'About', 'Skills', 'Education', 'Contacts']; // Removed 'Project'
+            const scrollPosition = window.scrollY;
+    
+            sections.forEach((sectionId) => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const offsetTop = section.offsetTop;
+                    const offsetHeight = section.offsetHeight;
+    
+                    // Adjust the threshold for detecting the active section
+                    if (scrollPosition >= offsetTop - 50 && scrollPosition < offsetTop + offsetHeight - 50) {
+                        setActiveSection(sectionId);
+                    }
+                }
+            });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <div className=" bg-[#1a1a1a88] text-white px-3 py-6 md:py-1 my-0 w-full">
@@ -15,26 +47,27 @@ function NavigationBar() {
                 >
                     {menuOpen ? (
                         <span className="text-2xl font-bold">&times;</span>
-                    ):(
+                    ) : (
                         <>
                             <span className="block w-6 h-0.5 bg-white"></span>
                             <span className="block w-6 h-0.5 bg-white"></span>
                             <span className="block w-6 h-0.5 bg-white"></span>
                         </>
                     )}
-                    
                 </button>
-                
+
                 <nav className={`flex-col md:flex-row md:flex gap-3 absolute md:static top-16 left-0 w-full md:w-auto bg-[#1a1a1a] md:bg-transparent z-10 transition-all duration-300 ${menuOpen ? 'flex' : 'hidden'} py-4 md:gap-5`}>
-                    <button ><span className="navi">Home</span></button>
-                    <button ><span className="navi">About</span></button>
-                    <button ><span className="navi">Project</span></button>
-                    <button ><span className="navi">Skills</span></button>
-                    <button ><span className="navi">Education</span></button>
-                    <button ><span className="mb-1 navi md:mb-0">Contacts</span></button>
+                    {['Home', 'About', 'Skills', 'Education', 'Contacts'].map((section) => (
+                        <button key={section} onClick={() => handleScrollToSection(section)}>
+                            <span className={`navi ${activeSection === section ? 'navi-active' : ''}`}>
+                                {section}
+                            </span>
+                        </button>
+                    ))}
                 </nav>
             </div>
         </div>
     );
 }
+
 export default NavigationBar;
