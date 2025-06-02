@@ -47,6 +47,14 @@ function Footer() {
     },
   ];
 
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="bg-dark-900 pt-12 mt-16 relative pb-5">
       {/* Modern gradient divider replacing the border-t */}
@@ -149,7 +157,7 @@ function Footer() {
           </p>
           <div className="mt-4 md:mt-0">
             <button 
-              onClick={() => scrollToSection('home')}
+              onClick={scrollToTop} // Updated to use scrollToTop function
               className="text-sm text-gray-400 hover:text-accent-400 transition-colors flex items-center group"
             >
               Back to top 
