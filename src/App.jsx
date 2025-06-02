@@ -3,6 +3,7 @@ import NavigationBar from './components/NavigationBar.jsx'
 import About from './pages/About.jsx'
 import Education from './pages/Education.jsx'
 import HomePage from './pages/HomePage.jsx'
+import Skills from './pages/Skills.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <HomePage/>
       <div className='md:m-[100px]'>
         <About/>
+        <Skills/>
         <Education/>
       </div>
       

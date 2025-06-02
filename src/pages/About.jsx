@@ -20,7 +20,7 @@ function About() {
                 </div>
             </div>
             <div className="md:max-w-[900px] max-w-full p-6 flex flex-col justify-center md:text-left text-center items-start dark:text-gray-200">
-            <h1 className="w-full mb-4 text-3xl font-bold text-center md:text-left"> About Me </h1>
+            <h1 className="w-full mb-4 text-3xl font-bold text-center text-gray-900 md:text-left md:text-4xl dark:text-white"> About Me </h1>
                 <p className="font-sans leading-7 break-words ">
                     I'm a versatile Computer Science undergraduate at Eastern University, Sri Lanka — a government university — focused on Full-Stack Development, Cybersecurity, and Game Development. My skill set spans Web Development, Java Programming, UI/UX Design, and Graphic Design, allowing me to craft complete, visually engaging, and technically sound solutions.<br />
                     <br />
