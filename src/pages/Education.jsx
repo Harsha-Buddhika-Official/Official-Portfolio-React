@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import next from '../components/images/logo/Next.png'
+import next from "../components/images/logo/Next.png";
 
 function EducationCard({ degree }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -111,8 +111,9 @@ function EducationCard({ degree }) {
 function Education() {
   const educationRef = useRef(null);
 
-  const EasternLogo = "https://upload.wikimedia.org/wikipedia/en/a/a0/EUSL_logo2.png";
-//   const NextGenLogo = {};
+  const EasternLogo =
+    "https://upload.wikimedia.org/wikipedia/en/a/a0/EUSL_logo2.png";
+  //   const NextGenLogo = {};
 
   const degrees = [
     {
@@ -136,28 +137,26 @@ function Education() {
         "Theory of Computing & Automata",
         "Logic Programming & Expert Systems",
         "Visual System Development Tools",
-        "Foundations of Management & Professional IT Ethics"
+        "Foundations of Management & Professional IT Ethics",
       ],
       logo: EasternLogo,
     },
     {
-        university: "NextGen Campus",
-        name: "Certificate in Cyber Security & Networking",
-        year: "2021/02/23 - 2021/06/29",
-        description:
+      university: "NextGen Campus",
+      name: "Certificate in Cyber Security & Networking",
+      year: "2021/02/23 - 2021/06/29",
+      description:
         "This certificate program at NextGen Campus provided comprehensive training in cybersecurity and networking. It covered key areas such as data security, network administration, and ethical hacking, equipping participants with the skills to secure and manage modern IT infrastructures.",
-        keyCourses: [
+      keyCourses: [
         "Cybersecurity Fundamentals",
         "Network Security & Administration",
         "Ethical Hacking & Penetration Testing",
         "Data Security & Encryption Techniques",
         "Incident Response & Risk Management",
-        ],
-        logo: next,
+      ],
+      logo: next,
     },
   ];
-
-  
 
   return (
     <div

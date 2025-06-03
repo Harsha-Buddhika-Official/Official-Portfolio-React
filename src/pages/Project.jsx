@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import ToDoReact from '../components/images/Project_Img/todo-react.png'
+import ToDoReact from "../components/images/Project_Img/todo-react.png";
 import portfolio from "../components/images/Project_Img/Official-Portfolio.png";
 
 function ProjectCard({ project }) {
@@ -78,18 +78,17 @@ function Project() {
       image: ToDoReact,
       description:
         "A simple and interactive to-do list application built with React. It allows users to add, delete, and mark tasks as completed, with real-time updates using React state management and a clean user interface.",
-      technologies: [
-        "React", "CSS", "JavaScript"
-      ],
+      technologies: ["React", "CSS", "JavaScript"],
       github: "https://github.com/Harsha-Buddhika-Official/ToDoApp-React",
     },
     {
-    name: "Modern Portfolio Site",
-    image: portfolio,
-    description:
+      name: "Modern Portfolio Site",
+      image: portfolio,
+      description:
         "A responsive and modern portfolio website built using React and Tailwind CSS. Features clean architecture, responsive design, and CI/CD deployment pipeline. Showcases skills and projects with an emphasis on DevOps and full-stack development.",
-    technologies: ["React", "Tailwind CSS", "Vite", "GitHub Pages"],
-    github: "https://github.com/Harsha-Buddhika-Official/Official-Portfolio-React",
+      technologies: ["React", "Tailwind CSS", "Vite", "GitHub Pages"],
+      github:
+        "https://github.com/Harsha-Buddhika-Official/Official-Portfolio-React",
     },
   ];
 

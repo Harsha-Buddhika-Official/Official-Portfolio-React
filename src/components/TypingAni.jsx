@@ -51,7 +51,8 @@ function TypingAni() {
     <div className="h-auto max-w-full whitespace-normal break-words overflow-wrap text-center px-4">
       <span className="md:text-[30px] text-[20px] font-semibold text-white inline-block">
         {displayText}
-        <span className="inline-block w-1 md:h-7 h-5 bg-white ml-1 animate-blink"
+        <span
+          className="inline-block w-1 md:h-7 h-5 bg-white ml-1 animate-blink"
           style={{
             animation: "blink 1s infinite",
           }}
