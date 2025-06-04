@@ -65,21 +65,6 @@ function Contact() {
         </p>
 
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8 overflow-hidden relative">
-          {/* Background pattern */}
-          {/* <div className="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none">
-            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="contactPattern" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <circle cx="10" cy="10" r="1" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#contactPattern)" />
-            </svg>
-            </div> */}
-
-          {/* Decorative elements */}
-          <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-accent-400/10 blur-3xl"></div>
-          <div className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full bg-primary-400/10 blur-3xl"></div>
 
           <div className="relative z-10">
             <div className="text-center mb-8">
