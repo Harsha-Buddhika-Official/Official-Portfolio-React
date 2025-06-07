@@ -1,12 +1,54 @@
-# React + Vite
+# Official Portfolio React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website built using React.js and Tailwind CSS. It showcases various sections such as About, Projects, Skills, Education, and Contact, along with a responsive navigation bar and footer.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Fully responsive and adapts to different screen sizes.
+- **Dynamic Sections**: Includes sections for About, Projects, Skills, Education, and Contact.
+- **Reusable Components**: Built with reusable React components for better maintainability.
+- **Smooth Navigation**: Scrolls smoothly to different sections using the navigation bar.
+- **Modern Styling**: Styled with Tailwind CSS for a clean and modern look.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Official-Portfolio-React.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Official-Portfolio-React
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Deployment
+
+To deploy the project, build the production-ready files using:
+```bash
+npm run build
+```
+Then, host the `dist/` folder on your preferred hosting platform.
+
+## Technologies Used
+
+- **React.js**: For building the user interface.
+- **Tailwind CSS**: For styling the application.
+- **Vite**: For fast development and build tooling.
+- **JavaScript**: For interactivity and logic.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built with [React.js](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
+- Inspired by modern portfolio designs.
