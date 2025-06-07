@@ -14,7 +14,7 @@ This is a personal portfolio website built using React.js and Tailwind CSS. It s
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Official-Portfolio-React.git
+   git clone https://github.com/Harsha-Buddhika-Official/Official-Portfolio-React.git
    ```
 2. Navigate to the project directory:
    ```bash
