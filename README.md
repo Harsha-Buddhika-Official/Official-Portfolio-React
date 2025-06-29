@@ -9,10 +9,10 @@ A modern, responsive personal portfolio website showcasing the work and skills o
 - **⚡ Fast Performance**: Built with Vite for lightning-fast development and production builds
 - **🔄 Dynamic Typing Animation**: Eye-catching typewriter effect showcasing multiple roles
 - **🎯 Smooth Navigation**: Seamless scrolling between sections with fixed navigation bar
-- **🌙 Dark Mode Ready**: Built with dark mode compatibility using Tailwind CSS
-- **📊 Interactive Skill Cards**: Animated skill showcase with technology icons
+- **🌙 Dark Mode Classes**: Styled with Tailwind CSS dark mode utility classes
+- **📊 Interactive Skill Cards**: Animated skill showcase with hover effects and technology icons
 - **💼 Project Portfolio**: Detailed project cards with GitHub integration
-- **📧 Contact Integration**: Direct contact form and social media links
+- **📧 Contact Information**: Direct contact details and social media links
 
 ## 🗂️ Sections
 
@@ -32,9 +32,9 @@ A modern, responsive personal portfolio website showcasing the work and skills o
 
 - **🛠️ Skills**: Interactive skill cards featuring technologies and tools with smooth animations
 
-- **🎓 Education**: Academic background and certifications
+- **🎓 Education**: Academic background at Eastern University, Sri Lanka with expandable course details
 
-- **📞 Contact**: Multiple ways to get in touch with direct contact form integration
+- **📞 Contact**: Contact information with phone number, email, and social media links (LinkedIn, Instagram, GitHub)
 
 ## 🚀 Quick Start
 
@@ -87,10 +87,10 @@ The optimized files will be generated in the `dist/` directory.
 
 ### Deployment Options
 
-- **GitHub Pages**: Automatic deployment via GitHub Actions
+- **GitHub Pages**: Can be deployed to GitHub Pages
 - **Vercel**: Connect your GitHub repo for instant deployment
 - **Netlify**: Drag and drop the `dist/` folder or connect via Git
-- **Firebase Hosting**: Use Firebase CLI for deployment
+- **Any Static Hosting**: Upload the `dist/` folder to any static hosting service
 
 ## 🔧 Technologies & Tools
 
@@ -158,14 +158,19 @@ The homepage features a smooth typewriter effect that cycles through different p
 - Touch-friendly navigation for mobile devices
 
 ### Interactive Skill Cards
-- Hover effects with scaling and glow animations
+- Hover effects with scaling, glow animations, and sparkle effects
 - Organized skill categories with visual technology icons
 - Smooth transitions and micro-interactions
 
 ### Project Showcase
-- Detailed project cards with screenshots
-- Direct GitHub repository links
+- Project cards with screenshots and descriptions
+- Direct GitHub repository links for each project
 - Technology stack highlights for each project
+
+### Contact Section
+- Direct contact information display
+- Clickable phone and email links
+- Social media integration with LinkedIn, Instagram, and GitHub
 
 ## 🤝 Contributing
 
@@ -178,9 +183,11 @@ The homepage features a smooth typewriter effect that cycles through different p
 ## 📧 Contact
 
 **Harsha Buddhika**
-- Portfolio: [Live Demo](https://harsha-buddhika-official.github.io/Official-Portfolio-React/)
+- Email: harshabuddika85@gmail.com
+- Phone: +9470 226 1733
 - GitHub: [@Harsha-Buddhika-Official](https://github.com/Harsha-Buddhika-Official)
-- LinkedIn: [Connect with me](https://linkedin.com/in/harsha-buddhika)
+- LinkedIn: [Harsha Buddhika](https://www.linkedin.com/in/harsha-buddhika/)
+- Instagram: [@m_r_harsha](https://www.instagram.com/m_r_harsha?igsh=N2t1ajQzZ2Fva3ow)
 
 ## 📄 License
 
