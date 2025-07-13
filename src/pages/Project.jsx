@@ -1,42 +1,43 @@
 import { useEffect, useRef } from "react";
 import ToDoReact from "../components/images/Project_Img/todo-react.png";
 import portfolio from "../components/images/Project_Img/Official-Portfolio.png";
+import eCommerce from "../components/images/Project_Img/E-commmerse.png";
 
 function ProjectCard({ project }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-500 h-full flex flex-col group">
-      <div className="aspect-video w-full overflow-hidden relative">
+    <div className="flex flex-col h-full overflow-hidden transition-all duration-500 bg-white shadow-lg dark:bg-gray-800 rounded-xl hover:shadow-xl group">
+      <div className="relative w-full overflow-hidden aspect-video">
         <img
           src={project.image}
           alt={`${project.name} preview`}
-          className="w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-700"
+          className="object-cover object-center w-full h-full transition-transform duration-700 transform group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-          <div className="p-4 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+        <div className="absolute inset-0 flex items-end transition-opacity duration-300 opacity-0 bg-gradient-to-t from-black/60 to-transparent group-hover:opacity-100">
+          <div className="w-full p-4 transition-transform duration-300 transform translate-y-4 group-hover:translate-y-0">
             <h3 className="text-xl font-bold text-white">{project.name}</h3>
           </div>
         </div>
       </div>
 
-      <div className="p-6 flex-1 flex flex-col bg-white dark:bg-gray-800 relative">
+      <div className="relative flex flex-col flex-1 p-6 bg-white dark:bg-gray-800">
         {/* Diagonal corner accent */}
-        <div className="absolute top-0 right-0 w-12 h-12 bg-primary-100 dark:bg-primary-900 transform rotate-45 translate-x-6 -translate-y-6"></div>
+        <div className="absolute top-0 right-0 w-12 h-12 transform rotate-45 translate-x-6 -translate-y-6 bg-primary-100 dark:bg-primary-900"></div>
 
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 relative z-10 font-sans">
+        <h3 className="relative z-10 mb-2 font-sans text-xl font-bold text-gray-900 dark:text-white">
           {project.name}
         </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4 flex-1 font-sans">
+        <p className="flex-1 mb-4 font-sans text-gray-600 dark:text-gray-400">
           {project.description}
         </p>
         <div className="mb-4">
-          <h4 className="font-medium text-gray-900 dark:text-white mb-2">
+          <h4 className="mb-2 font-medium text-gray-900 dark:text-white">
             Technologies
           </h4>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="inline-block px-3 py-1 text-sm bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full transition-colors duration-300 hover:bg-primary-100 dark:hover:bg-primary-900"
+                className="inline-block px-3 py-1 text-sm text-gray-800 transition-colors duration-300 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300 hover:bg-primary-100 dark:hover:bg-primary-900"
               >
                 {tech}
               </span>
@@ -90,6 +91,14 @@ function Project() {
       github:
         "https://github.com/Harsha-Buddhika-Official/Official-Portfolio-React",
     },
+    {
+      name: "E-commerce Store (ShopVibe)",
+      image: eCommerce,
+      description:
+        "A modern full-stack e-commerce platform built with React and Express.js, featuring dual customer and seller portals, complete shopping functionality, inventory management, sales analytics, and secure payment integration for a comprehensive online marketplace experience.",
+      technologies: ["React", "Express.js", "Node.js", "MongoDB"],
+      github: "https://github.com/Harsha-Buddhika-Official/E-Commerce"  
+    }
   ];
 
   useEffect(() => {
@@ -122,14 +131,14 @@ function Project() {
   return (
     <div
       id="projects"
-      className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 overflow-hidden"
+      className="relative px-4 py-16 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8 md:py-24"
     >
       {/* Decorative elements */}
-      <div className="absolute top-10 left-0 w-64 h-64 bg-primary-100 dark:bg-primary-900/20 rounded-full blur-3xl opacity-30 -translate-x-1/2"></div>
-      <div className="absolute bottom-10 right-0 w-64 h-64 bg-purple-100 dark:bg-purple-900/20 rounded-full blur-3xl opacity-30 translate-x-1/2"></div>
+      <div className="absolute left-0 w-64 h-64 -translate-x-1/2 rounded-full top-10 bg-primary-100 dark:bg-primary-900/20 blur-3xl opacity-30"></div>
+      <div className="absolute right-0 w-64 h-64 translate-x-1/2 bg-purple-100 rounded-full bottom-10 dark:bg-purple-900/20 blur-3xl opacity-30"></div>
 
       {/* Decorative lines */}
-      <div className="absolute right-10 top-10 opacity-20 dark:opacity-10 pointer-events-none">
+      <div className="absolute pointer-events-none right-10 top-10 opacity-20 dark:opacity-10">
         <svg
           width="100"
           height="100"
@@ -164,21 +173,21 @@ function Project() {
         </svg>
       </div>
 
-      <div className="text-center mb-12 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white inline-block relative">
+      <div className="relative z-10 mb-12 text-center">
+        <h2 className="relative inline-block text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
           Projects
-          <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 h-1 w-16 md:w-24 bg-primary-500 dark:bg-primary-400 rounded-full"></div>
+          <div className="absolute w-16 h-1 transform -translate-x-1/2 rounded-full -bottom-3 left-1/2 md:w-24 bg-primary-500 dark:bg-primary-400"></div>
         </h2>
       </div>
 
       <div
         ref={projectsRef}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10 relative z-10"
+        className="relative z-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 md:gap-10"
       >
         {projects.map((project, index) => (
           <div
             key={index}
-            className="project-card opacity-0 translate-y-10 transition-all duration-700 ease-out"
+            className="transition-all duration-700 ease-out translate-y-10 opacity-0 project-card"
             style={{ transitionDelay: `${index * 150}ms` }}
           >
             <ProjectCard project={project} />
@@ -187,7 +196,7 @@ function Project() {
       </div>
 
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none opacity-5 dark:opacity-10">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <pattern
             id="circleGrid"
