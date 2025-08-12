@@ -2,8 +2,13 @@
 
 body {
   background-color: #141414; /* or your preferred dark color */
-  background-image: radial-gradient(rgba(255,255,255,0.09) 1px, transparent 1px);
+  background-image: 
+    radial-gradient(rgba(255,255,255,0.09) 1px, transparent 1px);
   background-size: 30px 30px; /* adjust for dot spacing */
+  background-position: 0 0; /* Fixed starting position for dots */
+  background-attachment: fixed; /* Keep dots in place during scroll */
   color: white;
   font-family: 'Fira Code', monospace;
+  position: relative;
+  overflow-x: hidden;
 }

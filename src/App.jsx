@@ -1,5 +1,6 @@
 import "./App.css";
 import NavigationBar from "./components/NavigationBar.jsx";
+import CursorTracker from "./components/CursorTracker.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Education from "./pages/Education.jsx";
@@ -11,6 +12,7 @@ import Skills from "./pages/Skills.jsx";
 function App() {
   return (
     <div className="">
+      <CursorTracker />
       <div className="fixed top-0 left-0 z-50 w-full">
         <NavigationBar />
       </div>
