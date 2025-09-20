@@ -34,31 +34,31 @@ const CursorTracker = () => {
     <>
       {/* Main cursor dot */}
       <div
-        className="pointer-events-none fixed z-50 transition-transform duration-100"
+        className="fixed z-50 transition-transform pointer-events-none duration-25"
         style={{
           left: position.x - 6,
           top: position.y - 6,
           transform: isClicking ? 'scale(0.8)' : 'scale(1)',
         }}
       >
-        <div className="w-3 h-3 rounded-full bg-white shadow-lg shadow-white/30" />
+        <div className="w-3 h-3 bg-white rounded-full shadow-lg shadow-white/30" />
       </div>
 
       {/* Outer ring */}
       <div
-        className="pointer-events-none fixed z-40 transition-all duration-300 ease-out"
+        className="fixed z-40 transition-all duration-300 ease-out pointer-events-none"
         style={{
           left: position.x - 16,
           top: position.y - 16,
           transform: isClicking ? 'scale(1.3)' : 'scale(1)',
         }}
       >
-        <div className="w-8 h-8 rounded-full border border-white/40 animate-pulse" />
+        <div className="w-8 h-8 border rounded-full border-white/40 animate-pulse" />
       </div>
 
       {/* Accent glow effect matching your #ff4c60 theme */}
       <div
-        className="pointer-events-none fixed z-30 transition-opacity duration-500"
+        className="fixed z-30 transition-opacity duration-500 pointer-events-none"
         style={{
           left: position.x - 25,
           top: position.y - 25,
