@@ -44,6 +44,10 @@
   border-radius: 5px; */
 }
 
+/* * {
+  cursor: none !important;
+} */
+
 @media screen and (max-width: 769px) {
   .navi {
     width: auto;
