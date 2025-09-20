@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import ToDoReact from "../components/images/Project_Img/todo-react.png";
 import portfolio from "../components/images/Project_Img/Official-Portfolio.png";
 import eCommerce from "../components/images/Project_Img/E-commmerse.png";
+import Book from "../components/images/Project_Img/Book-Management-System.png";
 
 function ProjectCard({ project }) {
   return (
@@ -97,8 +98,16 @@ function Project() {
       description:
         "A modern full-stack e-commerce platform built with React and Express.js, featuring dual customer and seller portals, complete shopping functionality, inventory management, sales analytics, and secure payment integration for a comprehensive online marketplace experience.",
       technologies: ["React", "Express.js", "Node.js", "MongoDB"],
-      github: "https://github.com/Harsha-Buddhika-Official/E-Commerce"  
-    }
+      github: "https://github.com/Harsha-Buddhika-Official/E-Commerce",
+    },
+    {
+      name: "Book Management System",
+      image: Book,
+      description:
+        "A comprehensive full-stack book management platform built with React and Express.js, featuring user authentication, complete CRUD operations for book collections, intuitive Material-UI interface, MongoDB database integration, protected routes, session management, and search/filter capabilities for efficient library organization and digital catalog management.",
+      technologies: ["React", "Express.js", "Node.js", "MongoDB"],
+      github: "https://github.com/Harsha-Buddhika-Official/Book-Management-System",
+    },
   ];
 
   useEffect(() => {
