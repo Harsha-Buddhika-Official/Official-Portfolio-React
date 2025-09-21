@@ -105,7 +105,7 @@ function Project() {
       image: Book,
       description:
         "A comprehensive full-stack book management platform built with React and Express.js, featuring user authentication, complete CRUD operations for book collections, intuitive Material-UI interface, MongoDB database integration, protected routes, session management, and search/filter capabilities for efficient library organization and digital catalog management.",
-      technologies: ["React", "Express.js", "Node.js", "MongoDB"],
+      technologies: ["React", "Express.js", "Node.js", "MongoDB", "Material UI"],
       github: "https://github.com/Harsha-Buddhika-Official/Book-Management-System",
     },
   ];
