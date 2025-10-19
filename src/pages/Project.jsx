@@ -101,12 +101,25 @@ function Project() {
       github: "https://github.com/Harsha-Buddhika-Official/E-Commerce",
     },
     {
-      name: "Book Management System",
+      name: "Book Management System (GraphQL + React)",
       image: Book,
       description:
-        "A comprehensive full-stack book management platform built with React and Express.js, featuring user authentication, complete CRUD operations for book collections, intuitive Material-UI interface, MongoDB database integration, protected routes, session management, and search/filter capabilities for efficient library organization and digital catalog management.",
-      technologies: ["React", "Express.js", "Node.js", "MongoDB", "Material UI"],
-      github: "https://github.com/CodeCraft-Web/Book-Management-System",
+        "Full-stack Book Management System with a GraphQL API (Apollo Server) and a React + Vite frontend. Provides JWT-based authentication, protected resolvers, and full CRUD for books stored in MongoDB via Mongoose. The client uses Apollo Client and Material-UI for an interactive, responsive user experience.",
+      technologies: [
+        "React 18",
+        "Vite",
+        "Apollo Client",
+        "Apollo Server",
+        "GraphQL",
+        "Node.js (ESM)",
+        "Mongoose",
+        "MongoDB",
+        "JSON Web Tokens",
+        "bcryptjs",
+        "Material UI",
+        "React Router"
+      ],
+      github: "https://github.com/CodeCraft-Web/Book-Management-System-gql",
     },
   ];
 
