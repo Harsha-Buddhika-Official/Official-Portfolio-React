@@ -20,7 +20,7 @@ function HomePage() {
       <div className="flex flex-col items-center justify-center gap-6 mt-5 sm:flex-row">
         {/* cv link here */}
         <a
-          href=""
+          href="https://drive.google.com/file/d/1jzR7V0oRECY2jXb0X1fx0Mc0rO_dW0Rr/view?usp=sharing"
           className="relative py-4 overflow-hidden font-medium text-white rounded-lg shadow-lg group bg-accent-600 shadow-accent-900/20"
         >
           <span className="relative px-2.5 z-10 flex items-center justify-center">
