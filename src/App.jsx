@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="">
       <CursorTracker />
-      <div className="fixed top-0 left-0 z-50 w-full">
+      <div className="fixed top-0 z-50 content-center w-full m-auto">
         <NavigationBar />
       </div>
       <div id="Home">

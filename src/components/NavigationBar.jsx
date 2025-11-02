@@ -33,13 +33,13 @@ function NavigationBar() {
 
           console.log(
             `Checking section: ${sectionId}, scrollPosition: ${scrollPosition}, offsetTop: ${offsetTop}, offsetHeight: ${offsetHeight}`
-          ); // Debugging log
+          );
 
           if (
             scrollPosition >= offsetTop - 50 &&
             scrollPosition < offsetTop + offsetHeight - 50
           ) {
-            console.log(`Active section detected: ${sectionId}`); // Debugging log
+            console.log(`Active section detected: ${sectionId}`);
             setActiveSection(sectionId);
           }
         }
@@ -51,8 +51,8 @@ function NavigationBar() {
   }, []);
 
   return (
-    <div className=" bg-[#1a1a1a88] text-white px-3 py-6 md:py-1 my-0 w-full">
-      <div className="flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-2 lg:px-8">
+    <div className=" bg-[#2c2c2c88] text-white px-3 py-6 md:py-1 max-w-7xl mx-auto my-4 rounded-4xl">
+      <div className="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-2 lg:px-8">
         <h1
           className="text-[20px] font-bold"
           style={{ fontFamily: "'Fira Code', monospace" }}

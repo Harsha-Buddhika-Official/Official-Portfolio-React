@@ -12,3 +12,7 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+
+.w-customise{
+  width: 70%;
+}
