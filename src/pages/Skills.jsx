@@ -76,8 +76,23 @@ function Skills() {
   const skillsRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  // Programming Languages
+  // Programming Languages (match image)
   const programmingLanguages = [
+    {
+      name: "HTML5",
+      imageUrl:
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+    },
+    {
+      name: "CSS3",
+      imageUrl:
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
+    },
+    {
+      name: "JavaScript",
+      imageUrl:
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    },
     {
       name: "Java",
       imageUrl:
@@ -88,15 +103,10 @@ function Skills() {
       imageUrl:
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
     },
-    {
-      name: "JavaScript",
-      imageUrl:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-    },
   ];
 
-  // Web & App Technologies
-  const webTechnologies = [
+  // Frameworks, Libraries & Technologies
+  const frameworksTechnologies = [
     {
       name: "React",
       imageUrl:
@@ -113,41 +123,33 @@ function Skills() {
         "https://raw.githubusercontent.com/DilZhaan/DilZhaan/main/express.svg",
     },
     {
-      name: "MongoDB",
+      name: "Tailwind",
       imageUrl:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
+    },
+    {
+      name: "GraphQL",
+      imageUrl:
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg",
     },
   ];
 
-  // DevOps & Tools
-  const devOpsTools = [
+  // Databases & Cloud
+  const databasesCloud = [
     {
-      name: "Git",
+      name: "MongoDB",
       imageUrl:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
     },
     {
       name: "MySQL",
       imageUrl:
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
     },
-    {
-      name: "HTML5",
-      imageUrl:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
-    },
-    {
-      name: "CSS3",
-      imageUrl:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg",
-    },
-    {
-      name: "Tailwind",
-      imageUrl:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
-    },
   ];
-  const Design = [
+
+  // Tools & Skills
+  const toolsSkills = [
     {
       name: "Figma",
       imageUrl:
@@ -163,7 +165,26 @@ function Skills() {
       imageUrl:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png",
     },
+    {
+      name: "Git",
+      imageUrl:
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
+    },
   ];
+
+  // Currently Learning
+  // const currentlyLearning = [
+  //   {
+  //     name: "PostgreSQL",
+  //     imageUrl:
+  //       "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
+  //   },
+  //   {
+  //     name: "Python",
+  //     imageUrl:
+  //       "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+  //   },
+  // ];
 
   useEffect(() => {
     // Add the keyframes for enhanced animations
@@ -315,21 +336,30 @@ function Skills() {
             skills={programmingLanguages}
             isVisible={isVisible}
           />
+
           <SkillSection
-            title="Web & App Technologies"
-            skills={webTechnologies}
+            title="Frameworks & Libraries & Technologies"
+            skills={frameworksTechnologies}
             isVisible={isVisible}
           />
-          <SkillSection 
-            title="DevOps & Tools" 
-            skills={devOpsTools}
+
+          <SkillSection
+            title="Databases & Cloud"
+            skills={databasesCloud}
             isVisible={isVisible}
           />
-          <SkillSection 
-            title="Design Tools" 
-            skills={Design}
+
+          <SkillSection
+            title="Tools & Skills"
+            skills={toolsSkills}
             isVisible={isVisible}
           />
+
+          {/* <SkillSection
+            title="Currently Learning"
+            skills={currentlyLearning}
+            isVisible={isVisible}
+          /> */}
         </div>
       </div>
     </div>
