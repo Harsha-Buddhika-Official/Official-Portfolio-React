@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import ToDoReact from "../components/images/Project_Img/todo-react.png";
+// import ToDoReact from "../components/images/Project_Img/todo-react.png";
 import portfolio from "../components/images/Project_Img/Official-Portfolio.png";
-import eCommerce from "../components/images/Project_Img/E-commmerse.png";
+// import eCommerce from "../components/images/Project_Img/E-commmerse.png";
 import Book from "../components/images/Project_Img/Book-Management-System.png";
 
 function ProjectCard({ project }) {
@@ -105,22 +105,22 @@ function Project() {
       ],
       github: "https://github.com/CodeCraft-Web/Book-Management-System-gql",
     },
-    {
-      name: "ToDoApp - React",
-      image: ToDoReact,
-      description:
-        "A simple and interactive to-do list application built with React. It allows users to add, delete, and mark tasks as completed, with real-time updates using React state management and a clean user interface.",
-      technologies: ["React", "CSS", "JavaScript"],
-      github: "https://github.com/Harsha-Buddhika-Official/ToDoApp-React",
-    },
-    {
-      name: "E-commerce Store (ShopVibe)",
-      image: eCommerce,
-      description:
-        "A modern full-stack e-commerce platform built with React and Express.js, featuring dual customer and seller portals, complete shopping functionality, inventory management, sales analytics, and secure payment integration for a comprehensive online marketplace experience.",
-      technologies: ["React", "Express.js", "Node.js", "MongoDB"],
-      github: "https://github.com/Harsha-Buddhika-Official/E-Commerce",
-    },
+    // {
+    //   name: "ToDoApp - React",
+    //   image: ToDoReact,
+    //   description:
+    //     "A simple and interactive to-do list application built with React. It allows users to add, delete, and mark tasks as completed, with real-time updates using React state management and a clean user interface.",
+    //   technologies: ["React", "CSS", "JavaScript"],
+    //   github: "https://github.com/Harsha-Buddhika-Official/ToDoApp-React",
+    // },
+    // {
+    //   name: "E-commerce Store (ShopVibe)",
+    //   image: eCommerce,
+    //   description:
+    //     "A modern full-stack e-commerce platform built with React and Express.js, featuring dual customer and seller portals, complete shopping functionality, inventory management, sales analytics, and secure payment integration for a comprehensive online marketplace experience.",
+    //   technologies: ["React", "Express.js", "Node.js", "MongoDB"],
+    //   github: "https://github.com/Harsha-Buddhika-Official/E-Commerce",
+    // },
   ];
 
   useEffect(() => {
