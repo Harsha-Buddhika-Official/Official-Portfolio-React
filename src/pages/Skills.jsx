@@ -3,23 +3,25 @@ import { useEffect, useRef, useState } from "react";
 function SkillIcon({ imageUrl, name, delay, isVisible }) {
   return (
     <div
-      className={`flex flex-col items-center translate-y-8 opacity-0 cursor-pointer group ${isVisible ? 'animate-fadeIn' : ''}`}
-      style={{ animationDelay: isVisible ? `${delay}ms` : '0ms', animationFillMode: "forwards" }}
+      className={`flex flex-col items-center translate-y-8 opacity-0 cursor-pointer group ${isVisible ? "animate-fadeIn" : ""}`}
+      style={{
+        animationDelay: isVisible ? `${delay}ms` : "0ms",
+        animationFillMode: "forwards",
+      }}
     >
       <div className="relative w-20 h-20 mb-3 md:w-24 md:h-24">
         {/* Glowing background effect */}
         <div className="absolute inset-0 transition-all duration-700 scale-110 opacity-0 bg-gradient-to-br from-primary-400/20 via-accent-400/20 to-purple-400/20 rounded-2xl blur-lg group-hover:opacity-100"></div>
-        
+
         {/* Main skill container */}
         <div className="relative flex items-center justify-center w-full h-full p-4 transition-all duration-500 transform border border-gray-100 shadow-lg bg-gradient-to-br from-white via-gray-50 to-white dark:from-gray-800 dark:via-gray-700 dark:to-gray-800 rounded-2xl hover:shadow-2xl hover:scale-110 hover:-rotate-2 dark:border-gray-600 group-hover:border-primary-300 dark:group-hover:border-primary-500">
-          
           {/* Animated gradient overlay */}
           <div className="absolute inset-0 transition-all duration-500 bg-gradient-to-br from-primary-500/0 via-accent-500/0 to-purple-500/0 group-hover:from-primary-500/10 group-hover:via-accent-500/10 group-hover:to-purple-500/10 rounded-2xl"></div>
-          
+
           {/* Sparkle effects */}
           <div className="absolute w-2 h-2 transition-all duration-300 delay-200 bg-yellow-400 rounded-full opacity-0 top-2 right-2 group-hover:opacity-100 animate-pulse"></div>
           <div className="absolute bottom-2 left-2 w-1.5 h-1.5 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 animate-pulse transition-all duration-300 delay-400"></div>
-          
+
           <img
             src={imageUrl}
             alt={name}
@@ -27,7 +29,7 @@ function SkillIcon({ imageUrl, name, delay, isVisible }) {
           />
         </div>
       </div>
-      
+
       {/* Skill name with enhanced styling */}
       <div className="text-center">
         <p className="relative text-sm font-semibold text-gray-700 transition-colors duration-300 md:text-base dark:text-gray-300 group-hover:text-primary-600 dark:group-hover:text-primary-400">
@@ -175,6 +177,11 @@ function Skills() {
       imageUrl:
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg",
     },
+    {
+      name: "Postman",
+      imageUrl:
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
+    },
   ];
 
   // Currently Learning
@@ -271,7 +278,7 @@ function Skills() {
       {
         threshold: 0.1,
         rootMargin: "0px 0px -100px 0px",
-      }
+      },
     );
 
     if (skillsRef.current) {
@@ -293,8 +300,11 @@ function Skills() {
     >
       {/* Enhanced decorative elements */}
       <div className="absolute top-0 -mt-20 rounded-full right-1/4 w-96 h-96 bg-gradient-to-br from-primary-200/30 via-accent-200/20 to-purple-200/30 dark:from-primary-900/20 dark:via-accent-900/10 dark:to-purple-900/20 blur-3xl animate-float"></div>
-      <div className="absolute bottom-0 -mb-20 rounded-full left-1/4 w-80 h-80 bg-gradient-to-tr from-accent-200/30 via-purple-200/20 to-primary-200/30 dark:from-accent-900/20 dark:via-purple-900/10 dark:to-primary-900/20 blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
-      
+      <div
+        className="absolute bottom-0 -mb-20 rounded-full left-1/4 w-80 h-80 bg-gradient-to-tr from-accent-200/30 via-purple-200/20 to-primary-200/30 dark:from-accent-900/20 dark:via-purple-900/10 dark:to-primary-900/20 blur-3xl animate-float"
+        style={{ animationDelay: "1s" }}
+      ></div>
+
       {/* Floating particles */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(6)].map((_, i) => (
@@ -302,10 +312,10 @@ function Skills() {
             key={i}
             className="absolute w-2 h-2 rounded-full bg-primary-400/30 animate-float"
             style={{
-              left: `${20 + (i * 15)}%`,
-              top: `${10 + (i * 12)}%`,
+              left: `${20 + i * 15}%`,
+              top: `${10 + i * 12}%`,
               animationDelay: `${i * 0.5}s`,
-              animationDuration: `${3 + (i * 0.5)}s`,
+              animationDuration: `${3 + i * 0.5}s`,
             }}
           ></div>
         ))}
@@ -321,9 +331,12 @@ function Skills() {
 
         <div className="relative p-8 border shadow-2xl bg-gradient-to-br from-white/90 via-white/80 to-gray-50/90 dark:from-gray-800/90 dark:via-gray-800/80 dark:to-gray-900/90 backdrop-blur-xl rounded-3xl border-white/20 dark:border-gray-700/30 md:p-12">
           {/* Subtle grid pattern overlay */}
-          <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.05] pointer-events-none rounded-3xl" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-opacity='1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`
-          }}></div>
+          <div
+            className="absolute inset-0 opacity-[0.02] dark:opacity-[0.05] pointer-events-none rounded-3xl"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-opacity='1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`,
+            }}
+          ></div>
           {/* Connect dots pattern */}
           {/* <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-5 dark:opacity-10">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
